@@ -9,20 +9,21 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Empleados")
+@Table(name = "Empleados")
 public class Empleados {
+
     @Id
-    @Column(name="Cedula_Emp")
+    @Column(name = "Cedula_Emp")
     private int ccEmpleado;
-    
-    @Column(name="Nombre")
+
+    @Column(name = "Nombre")
     private String nombre;
-    
-    @Column(name="Slario")
+
+    @Column(name = "Slario")
     private double salario;
-    
-    @ManyToOne(fetch =FetchType.EAGER)
-    @JoinColumn(name="Cedula_Admin")
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "Cedula_Admin")
     private Administradores idJefe;
 
     /**
