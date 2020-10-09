@@ -23,7 +23,7 @@ public class Empleados {
     private double salario;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Cedula_Admin")
+    @JoinColumn(name = "Jefe")
     private Administradores idJefe;
 
     /**

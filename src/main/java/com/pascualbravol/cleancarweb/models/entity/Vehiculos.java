@@ -27,7 +27,7 @@ public class Vehiculos {
     private String color;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "Cedula_Clnt")
+    @JoinColumn(name = "Dueño")
     private Clientes dueño;
 
     /**
