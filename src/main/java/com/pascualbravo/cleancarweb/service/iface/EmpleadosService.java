@@ -1,6 +1,6 @@
 package com.pascualbravo.cleancarweb.service.iface;
 
-import com.pascualbravol.cleancarweb.models.entity.Empleados;
+import com.pascualbravo.cleancarweb.models.entity.Empleados;
 import java.util.List;
 
 

@@ -1,7 +1,7 @@
 package com.pascualbravo.cleancarweb.controller;
 
 import com.pascualbravo.cleancarweb.service.iface.EmpleadosService;
-import com.pascualbravol.cleancarweb.models.entity.Empleados;
+import com.pascualbravo.cleancarweb.models.entity.Empleados;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

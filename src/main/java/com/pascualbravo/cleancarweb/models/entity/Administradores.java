@@ -1,4 +1,4 @@
-package com.pascualbravol.cleancarweb.models.entity;
+package com.pascualbravo.cleancarweb.models.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

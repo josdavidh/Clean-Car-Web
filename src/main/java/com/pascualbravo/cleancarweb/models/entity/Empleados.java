@@ -1,4 +1,4 @@
-package com.pascualbravol.cleancarweb.models.entity;
+package com.pascualbravo.cleancarweb.models.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,12 +6,11 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+//import javax.persistence.Table;
 
 @Entity
-@Table(name = "Empleados")
+//@Table(name = "Empleados")
 public class Empleados {
-
     @Id
     @Column(name = "Cedula_Emp")
     private int ccEmpleado;
