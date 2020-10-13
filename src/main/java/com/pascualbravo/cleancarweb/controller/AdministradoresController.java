@@ -35,8 +35,8 @@ public class AdministradoresController {
     }
     
     @DeleteMapping("/{cedulaAdmin}")
-    public void delete(int cedula){
-        administradoresService.delete(cedula);
+    public void delete(@PathVariable int cedulaAdmin){
+        administradoresService.delete(cedulaAdmin);
     }
     
 }
