@@ -33,6 +33,7 @@ public class AdministradoresServiceImpl implements AdministradoresService {
         if (existAdministradores.isPresent()){
             existAdministradores.get().setNombres(administradores.getNombres());
             existAdministradores.get().setApellidos(administradores.getApellidos());
+            existAdministradores.get().setPassword(administradores.getPassword());
             administradoresRepository.save(existAdministradores.get());
         }
     }

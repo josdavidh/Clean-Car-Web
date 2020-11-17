@@ -1,7 +1,7 @@
 package com.pascualbravo.cleancarweb.controller;
 
-import com.pascualbravo.cleancarweb.models.entity.Clientes;
-import com.pascualbravo.cleancarweb.service.iface.ClientesService;
+import com.pascualbravo.cleancarweb.models.entity.Recibo;
+import com.pascualbravo.cleancarweb.service.iface.ReciboService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,29 +15,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/clientes")
+@RequestMapping("/recibo")
 @CrossOrigin("*")
-public class ClientesController {
+public class ReciboController {
     @Autowired
-    private ClientesService clientesService;
+    private ReciboService reciboService;
     
-    @GetMapping
-    public List<Clientes> getAll(){
-        return clientesService.getAll();
-    }
     @PostMapping
-    public void create(@RequestBody Clientes clientes){
-        clientesService.create(clientes);
+    public void create(@RequestBody Recibo recibo){
+        reciboService.create(recibo);
     }
-    
-    @PutMapping("/{cedula}")
-    public void update(@PathVariable int cedula,@RequestBody Clientes clientes){
-        clientesService.update(cedula, clientes);
+    @GetMapping
+    public List<Recibo> getAll(){
+        return reciboService.getAll();
     }
-    @DeleteMapping("/{cedula}")
-    public void delete(@PathVariable int cedula){
-        clientesService.delete(cedula);
+    @PutMapping("/{cod}")
+    public void update(@PathVariable int cod, @RequestBody Recibo recibo ){
+        reciboService.update(cod, recibo);
     }
-    
+    @DeleteMapping("/{cod}")
+    public void delete(@PathVariable int cod){
+        reciboService.delete(cod);
+    }
     
 }

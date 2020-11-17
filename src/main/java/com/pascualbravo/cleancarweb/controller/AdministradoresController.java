@@ -4,6 +4,7 @@ import com.pascualbravo.cleancarweb.models.entity.Administradores;
 import com.pascualbravo.cleancarweb.service.iface.AdministradoresService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/Administradores")
+@RequestMapping("/administradores")
+@CrossOrigin("*")
 public class AdministradoresController {
     @Autowired
     AdministradoresService administradoresService;

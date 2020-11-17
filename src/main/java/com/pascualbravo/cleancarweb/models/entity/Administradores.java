@@ -17,6 +17,9 @@ public class Administradores {
     
     @Column(name = "Apellidos")
     private String apellidos;
+    
+    @Column(name = "password")
+    private String password;
 
     /**
      * @return the cedulaAdmin
@@ -58,6 +61,20 @@ public class Administradores {
      */
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
+    }
+
+    /**
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
     
     
