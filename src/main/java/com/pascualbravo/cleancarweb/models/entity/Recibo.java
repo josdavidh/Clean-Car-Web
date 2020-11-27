@@ -29,7 +29,10 @@ public class Recibo {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Id_Servicio")
     private Servicios idServico;
-
+    
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "placa_Vehi")
+    private Vehiculos placa;
     /**
      * @return the codRecibo
      */
@@ -84,6 +87,20 @@ public class Recibo {
      */
     public void setIdServico(Servicios idServico) {
         this.idServico = idServico;
+    }
+
+    /**
+     * @return the placa
+     */
+    public Vehiculos getPlaca() {
+        return placa;
+    }
+
+    /**
+     * @param placa the placa to set
+     */
+    public void setPlaca(Vehiculos placa) {
+        this.placa = placa;
     }
     
     
