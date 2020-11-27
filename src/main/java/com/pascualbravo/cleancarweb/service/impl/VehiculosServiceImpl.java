@@ -43,6 +43,7 @@ public class VehiculosServiceImpl implements VehiculosService {
             existVehiculos.get().setModelo(vehiculos.getModelo());
             existVehiculos.get().setMarca(vehiculos.getMarca());
             existVehiculos.get().setColor(vehiculos.getColor());
+            existVehiculos.get().setImage(vehiculos.getImage());
             
             Optional<Clientes> existCliente=clientesRepository.findById(vehiculos.getDueño().getCcCliente());
             if (existCliente.isPresent()) {

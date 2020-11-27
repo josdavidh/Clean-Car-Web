@@ -29,6 +29,9 @@ public class Vehiculos {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Dueño")
     private Clientes dueño;
+    
+    @Column(name = "image")
+    private String image; 
 
     /**
      * @return the placa
@@ -112,5 +115,19 @@ public class Vehiculos {
      */
     public void setDueño(Clientes dueño) {
         this.dueño = dueño;
+    }
+
+    /**
+     * @return the image
+     */
+    public String getImage() {
+        return image;
+    }
+
+    /**
+     * @param image the image to set
+     */
+    public void setImage(String image) {
+        this.image = image;
     }
 }

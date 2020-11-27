@@ -3,6 +3,7 @@ com\pascualbravo\cleancarweb\CleanCarWebApplication.class
 com\pascualbravo\cleancarweb\models\repository\ReciboRepository.class
 com\pascualbravo\cleancarweb\service\impl\EmpleadosServiceImpl.class
 com\pascualbravo\cleancarweb\service\impl\ServiciosServiceImpl.class
+com\pascualbravo\cleancarweb\service\impl\ReciboServiceImpl.class
 com\pascualbravo\cleancarweb\models\repository\ClientesRepository.class
 com\pascualbravo\cleancarweb\models\repository\ServiciosRepository.class
 com\pascualbravo\cleancarweb\service\iface\AdministradoresService.class
@@ -16,15 +17,15 @@ com\pascualbravo\cleancarweb\service\impl\ClientesServiceImpl.class
 com\pascualbravo\cleancarweb\service\impl\VehiculosServiceImpl.class
 com\pascualbravo\cleancarweb\models\repository\EmpleadosRepository.class
 com\pascualbravo\cleancarweb\service\iface\ServiciosService.class
-com\pascualbravo\cleancarweb\models\repository\PerfilRepository.class
 com\pascualbravo\cleancarweb\controller\EmpleadosController.class
 com\pascualbravo\cleancarweb\models\repository\AdministradoresRepository.class
 com\pascualbravo\cleancarweb\models\repository\VehiculosRepository.class
 com\pascualbravo\cleancarweb\controller\VehiculosController.class
-com\pascualbravo\cleancarweb\models\entity\Perfil.class
+com\pascualbravo\cleancarweb\controller\ReciboController.class
 com\pascualbravo\cleancarweb\models\entity\Servicios.class
 com\pascualbravo\cleancarweb\models\entity\Vehiculos.class
 com\pascualbravo\cleancarweb\models\entity\Recibo.class
 com\pascualbravo\cleancarweb\service\iface\VehiculosService.class
+com\pascualbravo\cleancarweb\service\iface\ReciboService.class
 com\pascualbravo\cleancarweb\models\entity\Empleados.class
 com\pascualbravo\cleancarweb\models\entity\Administradores.class
