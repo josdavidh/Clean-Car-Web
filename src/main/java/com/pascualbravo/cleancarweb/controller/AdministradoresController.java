@@ -41,4 +41,9 @@ public class AdministradoresController {
         administradoresService.delete(cedulaAdmin);
     }
     
+    @PostMapping("/login")
+    public Administradores login(@RequestBody Administradores administrador) throws Exception{
+        return administradoresService.login(administrador);
+    }
+    
 }

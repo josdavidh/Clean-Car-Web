@@ -12,4 +12,6 @@ public interface AdministradoresService {
     public void update(int cedulaAdmin, Administradores administradores); 
     
     public void delete(int cedulaAdmin);
+    
+    public Administradores login(Administradores administrador) throws Exception;
 }

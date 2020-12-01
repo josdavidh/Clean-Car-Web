@@ -46,4 +46,14 @@ public class AdministradoresServiceImpl implements AdministradoresService {
         }
     }
 
+    @Override
+    public Administradores login(Administradores administrador) throws Exception {
+      Optional<Administradores> existAdmin = 
+              this.administradoresRepository.findByCedulaAdminAndPassword(administrador.getCedulaAdmin(), administrador.getPassword());
+        if (!existAdmin.isPresent()) {
+            throw new Exception("cedula y/o contraseña incorreacta");
+        }
+        return existAdmin.get();
+    }
+
 }
